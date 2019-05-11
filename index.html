@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Básico de Backbone.js</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+    <link style="stylesheet" href="css/bootstrap.css">
+    <link style="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Open Sans', Arial;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="login-wrap">
+        <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Iniciar sesión</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Registrarme</label>
+            <div class="login-form">
+                <div class="sign-in-htm">
+                    <div class="group">
+                        <label for="user" class="label">Usuario</label>
+                        <input id="user" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Password</label>
+                        <input id="pass" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <input id="check" type="checkbox" class="check" checked>
+                        <label for="check"><span class="icon"></span> Recordarme </label>
+                    </div>
+                    <div>
+                        <div class="group init">
+                            <div class="success">
+                                <input type="submit" class="button" value="Iniciar sesión" onclick="testReadEx()">INICIO
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <a href="#forgot">Olvido su contraseña?</a>
+                    </div>
+                </div>
+                <div class="sign-up-htm">
+                    <div class="group">
+                        <label for="userReg" class="label">Usuario</label>
+                        <input id="userReg" type="text" class="input usuario">
+                    </div>
+                    <div class="group">
+                        <label for="passReg" class="label">Password</label>
+                        <input id="passReg" type="password" class="input pass" data-type="password">
+                    </div>
+                    <div class="group">
+                        <label for="repeatPass" class="label">Repetir Password</label>
+                        <input id="repeatPass" type="password" class="input repeatPass" data-type="password">
+                    </div>
+                    <div class="group">
+                        <label for="email" class="label">Correo</label>
+                        <input id="email" type="text" class="input email">
+                    </div>
+                    <div class="group vista">
+                        <div class="cambiarColor">
+                            <input type="submit" class="button sign-in" value="Registrarme" onclick="insert()">REGISTRO
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/notie"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="js/vendor/underscore-min.js"></script>
+    <script src="js/vendor/bootstrap.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/backbone-min.js"></script>
+    <script src="js/backbone/models/libro.js"></script>
+
+</body>
+
+</html>

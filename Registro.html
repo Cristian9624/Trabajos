@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Básico de Backbone.js</title>
+    <link style="stylesheet" href="css/bootstrap.css">
+    <link style="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="C:/Users/crist/Documents/Universidad/Semestre 10/Ingenieria web/Tareas/corte 2/Proyecto/Inicio/public/css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="login-wrap">
+        <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Iniciar sesión</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Registrarme</label>
+            <div class="login-form">
+                <div class="sign-in-htm">
+                    <div class="group">
+                        <label for="user" class="label">Usuario</label>
+                        <input id="user" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Password</label>
+                        <input id="pass" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <input id="check" type="checkbox" class="check" checked>
+                        <label for="check"><span class="icon"></span> Recordarme </label>
+                    </div>
+                    <div class="group">
+                        <input type="submit" class="button" value="Iniciar sesión">
+                    </div>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <a href="#forgot">Olvido su contraseña?</a>
+                    </div>
+                </div>
+                <div class="sign-up-htm">
+                    <div class="group">
+                        <label for="userReg" class="label">Usuario</label>
+                        <input id="userReg" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="passReg" class="label">Password</label>
+                        <input id="passReg" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <label for="passRepeatReg" class="label">Repetir Password</label>
+                        <input id="passRepeatReg" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <label for="emailRepeat" class="label">Correo</label>
+                        <input id="emailRepeat" type="text" class="input">
+                    </div>
+                    <div class="group vista">
+                        <div class="cambiarColor">
+                            <input type="submit" class="button" value="Registrarme">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
